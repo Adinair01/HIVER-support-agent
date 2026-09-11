@@ -1,0 +1,255 @@
+{
+  "runId": "eval-2026-09-13T21-51-23-717Z-a71c0685",
+  "config": {
+    "model": "claude-sonnet-4-5",
+    "goldenSetSize": 200,
+    "judgeSampleSize": 0,
+    "variants": [
+      "keyword"
+    ],
+    "source": "csv",
+    "seededThreads": false
+  },
+  "metrics": {
+    "classification": {
+      "keyword": {
+        "accuracy": 0.62,
+        "perIntent": {
+          "ORDER_STATUS": {
+            "precision": 0.8889,
+            "recall": 0.64,
+            "f1": 0.7442,
+            "support": 25
+          },
+          "RETURN_REFUND": {
+            "precision": 0.875,
+            "recall": 0.84,
+            "f1": 0.8571,
+            "support": 25
+          },
+          "ACCOUNT_ACCESS": {
+            "precision": 1,
+            "recall": 0.48,
+            "f1": 0.6486,
+            "support": 25
+          },
+          "PRODUCT_COMPLAINT": {
+            "precision": 0.7895,
+            "recall": 0.6,
+            "f1": 0.6818,
+            "support": 25
+          },
+          "DELIVERY_ISSUE": {
+            "precision": 1,
+            "recall": 0.44,
+            "f1": 0.6111,
+            "support": 25
+          },
+          "BILLING_DISPUTE": {
+            "precision": 1,
+            "recall": 0.36,
+            "f1": 0.5294,
+            "support": 25
+          },
+          "GENERAL_INQUIRY": {
+            "precision": 0.2717,
+            "recall": 1,
+            "f1": 0.4274,
+            "support": 25
+          },
+          "ABUSE_SPAM": {
+            "precision": 1,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 25
+          }
+        },
+        "macro": {
+          "precision": 0.8531,
+          "recall": 0.62,
+          "f1": 0.6562
+        },
+        "confusionMatrix": {
+          "ORDER_STATUS": {
+            "ORDER_STATUS": 16,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 9,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "RETURN_REFUND": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 21,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 3,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 1,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 12,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 12,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "PRODUCT_COMPLAINT": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 15,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 10,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "DELIVERY_ISSUE": {
+            "ORDER_STATUS": 2,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 1,
+            "DELIVERY_ISSUE": 11,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 11,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "BILLING_DISPUTE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 9,
+            "GENERAL_INQUIRY": 15,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "GENERAL_INQUIRY": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 25,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ABUSE_SPAM": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 9,
+            "ABUSE_SPAM": 15,
+            "__unparsed": 0
+          }
+        },
+        "unparsedOrFailed": 0
+      }
+    },
+    "escalation": {
+      "precision": 0.5641,
+      "recall": 0.8571,
+      "f1": 0.6804,
+      "accuracy": 0.69,
+      "tp": 66,
+      "fp": 51,
+      "fn": 11,
+      "tn": 72,
+      "productionVariant": "keyword",
+      "byTrigger": {
+        "rule": 200
+      },
+      "decidedByRules": 200
+    },
+    "replyQuality": {
+      "evaluated": 200,
+      "meanRougeL": 0.1157,
+      "meanKeywordCoverage": 0.2017,
+      "lengthAppropriateRate": 1,
+      "meanWordCount": 22.625,
+      "topMissingKeywords": [
+        {
+          "keyword": "human review",
+          "count": 32
+        },
+        {
+          "keyword": "order number",
+          "count": 25
+        },
+        {
+          "keyword": "no reply",
+          "count": 23
+        },
+        {
+          "keyword": "carrier",
+          "count": 19
+        },
+        {
+          "keyword": "spam",
+          "count": 17
+        },
+        {
+          "keyword": "refund",
+          "count": 14
+        },
+        {
+          "keyword": "delivery date",
+          "count": 12
+        },
+        {
+          "keyword": "investigation",
+          "count": 12
+        },
+        {
+          "keyword": "review",
+          "count": 11
+        },
+        {
+          "keyword": "replacement",
+          "count": 8
+        }
+      ],
+      "degradedRate": 1
+    },
+    "judge": {
+      "summary": {
+        "judged": 0,
+        "valid": 0,
+        "invalid": 0,
+        "meanTotal": 0,
+        "maxTotal": 12,
+        "normalizedMean": 0,
+        "meanByDimension": {
+          "groundedness": 0,
+          "toneMatch": 0,
+          "resolutionLikelihood": 0,
+          "conciseness": 0
+        }
+      },
+      "agreement": {
+        "kappa": 0,
+        "observedAgreement": 0,
+        "expectedAgreement": 0,
+        "n": 0,
+        "humanScoredRows": 0,
+        "bucketRule": "rubric total 0-5 = low, 6-8 = medium, 9-12 = high"
+      }
+    }
+  }
+}

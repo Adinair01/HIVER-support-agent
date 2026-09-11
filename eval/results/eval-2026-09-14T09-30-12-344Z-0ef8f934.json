@@ -1,0 +1,1835 @@
+{
+  "runId": "eval-2026-09-14T09-30-12-344Z-0ef8f934",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "goldenSetSize": 30,
+    "judgeSampleSize": 30,
+    "variants": [
+      "few-shot"
+    ],
+    "source": "mongo",
+    "seededThreads": true
+  },
+  "metrics": {
+    "classification": {
+      "few-shot": {
+        "accuracy": 0.9,
+        "perIntent": {
+          "ORDER_STATUS": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "RETURN_REFUND": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1,
+            "support": 13
+          },
+          "PRODUCT_COMPLAINT": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "DELIVERY_ISSUE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "BILLING_DISPUTE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "GENERAL_INQUIRY": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ABUSE_SPAM": {
+            "precision": 1,
+            "recall": 0.8235,
+            "f1": 0.9032,
+            "support": 17
+          }
+        },
+        "macro": {
+          "precision": 1,
+          "recall": 0.9118,
+          "f1": 0.9516
+        },
+        "confusionMatrix": {
+          "ORDER_STATUS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "RETURN_REFUND": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 13,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "PRODUCT_COMPLAINT": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "DELIVERY_ISSUE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "BILLING_DISPUTE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "GENERAL_INQUIRY": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ABUSE_SPAM": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 1,
+            "GENERAL_INQUIRY": 1,
+            "ABUSE_SPAM": 14,
+            "__unparsed": 0
+          }
+        },
+        "unparsedOrFailed": 0
+      }
+    },
+    "escalation": {
+      "precision": 0.8636,
+      "recall": 0.95,
+      "f1": 0.9048,
+      "accuracy": 0.8667,
+      "tp": 19,
+      "fp": 3,
+      "fn": 1,
+      "tn": 7,
+      "productionVariant": "few-shot",
+      "byTrigger": {
+        "rule": 16,
+        "llm": 14
+      },
+      "decidedByRules": 16
+    },
+    "replyQuality": {
+      "evaluated": 30,
+      "meanRougeL": 0.0836,
+      "meanKeywordCoverage": 0.2,
+      "lengthAppropriateRate": 1,
+      "meanWordCount": 21.8,
+      "topMissingKeywords": [
+        {
+          "keyword": "no reply",
+          "count": 15
+        },
+        {
+          "keyword": "spam",
+          "count": 10
+        },
+        {
+          "keyword": "review",
+          "count": 8
+        },
+        {
+          "keyword": "abuse",
+          "count": 5
+        },
+        {
+          "keyword": "password reset",
+          "count": 5
+        },
+        {
+          "keyword": "human review",
+          "count": 4
+        },
+        {
+          "keyword": "verification",
+          "count": 4
+        },
+        {
+          "keyword": "unlock",
+          "count": 3
+        },
+        {
+          "keyword": "account security",
+          "count": 2
+        },
+        {
+          "keyword": "account settings",
+          "count": 2
+        }
+      ],
+      "degradedRate": 0.0333
+    },
+    "judge": {
+      "summary": {
+        "judged": 30,
+        "valid": 30,
+        "invalid": 0,
+        "meanTotal": 9.2667,
+        "maxTotal": 12,
+        "normalizedMean": 0.7722,
+        "meanByDimension": {
+          "groundedness": 2.2,
+          "toneMatch": 2.5333,
+          "resolutionLikelihood": 1.5333,
+          "conciseness": 3
+        }
+      },
+      "agreement": {
+        "kappa": 0,
+        "observedAgreement": 0,
+        "expectedAgreement": 0,
+        "n": 0,
+        "humanScoredRows": 0,
+        "bucketRule": "rubric total 0-5 = low, 6-8 = medium, 9-12 = high"
+      }
+    }
+  },
+  "rows": [
+    {
+      "threadId": "gs-151",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441",
+          "1455",
+          "1469"
+        ],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "spam",
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-152",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441"
+        ],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "spam",
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-154",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441",
+          "1469",
+          "1455"
+        ],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "spam",
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-155",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We’re sorry, but we can’t assist with that. If you have a question about an Amazon order or service, let us know and we’ll help.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "spam",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 25
+      }
+    },
+    {
+      "threadId": "gs-157",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"angry_sentiment\": mentions useless.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We’re sorry you’re frustrated. If you have a specific issue with an order or account, please let us know the order number or account details so we can help resolve it.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "abuse",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 31
+      }
+    },
+    {
+      "threadId": "gs-158",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "RETURN_REFUND",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "The user is requesting a refund, which requires a manual refund action that only a human agent can perform.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "Please provide your order number so we can process your refund. We’ll confirm the refund on your card shortly.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1077"
+        ],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "abuse",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 19
+      }
+    },
+    {
+      "threadId": "gs-160",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441"
+        ],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "spam",
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-161",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "This is not a valid Amazon support request. Please do not share personal or financial information here. If you have a legitimate question, visit your Orders page or the Amazon Help Center for assistance.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "spam",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 34
+      }
+    },
+    {
+      "threadId": "gs-163",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441"
+        ],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "spam",
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-164",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "Thanks for reaching out. Please provide your order number so we can investigate further.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1077",
+          "1301",
+          "1329"
+        ],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "spam",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 14
+      }
+    },
+    {
+      "threadId": "gs-166",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441",
+          "1469",
+          "1455"
+        ],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "spam",
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-167",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "bot; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We need the order number to verify your claim. Please provide it so we can investigate further.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1077",
+          "1119"
+        ],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "spam",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 17
+      }
+    },
+    {
+      "threadId": "gs-169",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We’re sorry you’re upset. If you have a specific issue with an order or service, please let us know so we can help.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "abuse",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 23
+      }
+    },
+    {
+      "threadId": "gs-170",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "This appears to be a spam or phishing message. We cannot assist with external offers. Please report the link to Amazon for review.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0.2667,
+        "coverage": 0.6667,
+        "missing": [
+          "no reply"
+        ],
+        "appropriate": true,
+        "wordCount": 23
+      }
+    },
+    {
+      "threadId": "gs-172",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abusive with no actionable detail",
+      "predictions": {
+        "few-shot": {
+          "intent": "BILLING_DISPUTE",
+          "confidence": 0.9,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "The customer alleges theft and a billing dispute, requiring manual investigation and potential refund or account action.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "I’m sorry to hear about your concern. Please provide the order number and the date of the charge so we can investigate further. Check your Orders page for the details and let us know the information.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0.1818,
+        "coverage": 0.3333,
+        "missing": [
+          "abuse",
+          "human review"
+        ],
+        "appropriate": true,
+        "wordCount": 36
+      }
+    },
+    {
+      "threadId": "gs-173",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "threat",
+      "predictions": {
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We take all threats seriously. Please refrain from making threats. If you have a legitimate issue, let us know and we’ll help. Otherwise, we will report this to the appropriate authorities.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0,
+        "coverage": 0.3333,
+        "missing": [
+          "security",
+          "human review"
+        ],
+        "appropriate": true,
+        "wordCount": 31
+      }
+    },
+    {
+      "threadId": "gs-175",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "few-shot": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.6,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "User reports a generic app issue; no financial, legal, or safety risk, and can be resolved with standard troubleshooting.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "I’m sorry to hear you’re having trouble. Could you let me know which app feature isn’t working and any error messages you see? That will help me troubleshoot the issue. In the meantime, try reinstalling the app or clearing its cache.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "abuse",
+          "no reply",
+          "review"
+        ],
+        "appropriate": true,
+        "wordCount": 41
+      }
+    },
+    {
+      "threadId": "gs-051",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "login failure",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "Standard login issue can be resolved with automated password reset instructions.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "Let us get you back in. Check the spam folder for the reset email and we will resend it if needed.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1147",
+          "1161",
+          "1175"
+        ],
+        "rougeL": 0.3333,
+        "coverage": 0.3333,
+        "missing": [
+          "password reset",
+          "verification"
+        ],
+        "appropriate": true,
+        "wordCount": 21
+      }
+    },
+    {
+      "threadId": "gs-053",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "lockout",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account lock requires manual intervention to unlock the account.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed your account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1469",
+          "1441",
+          "1455"
+        ],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "unlock",
+          "verification",
+          "password reset"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-054",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "detail change",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "User requests a standard account setting change that can be handled with a self‑serve guide.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "To update your email, first reset your password. Check your spam folder for the reset email and let us resend it if needed. Once logged in, you can change your email in your account settings.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1161"
+        ],
+        "rougeL": 0.2609,
+        "coverage": 0.6667,
+        "missing": [
+          "verification"
+        ],
+        "appropriate": true,
+        "wordCount": 35
+      }
+    },
+    {
+      "threadId": "gs-056",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "platform specific",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "Standard login troubleshooting can be handled with automated guidance.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "It sounds like the app is having a temporary issue. Try updating or reinstalling the app, or clear its cache. If the problem persists, let us know the device type and app version so we can investigate further.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0.08,
+        "coverage": 0.3333,
+        "missing": [
+          "sign in",
+          "troubleshooting"
+        ],
+        "appropriate": true,
+        "wordCount": 38
+      }
+    },
+    {
+      "threadId": "gs-057",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "unlock request",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account unlocking requires manual intervention by a human agent.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "Let us get you back in. Check the spam folder for the reset email and we will resend it if needed.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1147",
+          "1161",
+          "1175"
+        ],
+        "rougeL": 0,
+        "coverage": 0,
+        "missing": [
+          "unlock",
+          "verification",
+          "return"
+        ],
+        "appropriate": true,
+        "wordCount": 21
+      }
+    },
+    {
+      "threadId": "gs-059",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": true,
+      "notes": "possible takeover",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "User reports unauthorized password change and cannot access account, requiring identity verification and manual account recovery.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "Let us get you back in. Check the spam folder for the reset email and we will resend it if needed.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1147",
+          "1161",
+          "1175"
+        ],
+        "rougeL": 0.1429,
+        "coverage": 0,
+        "missing": [
+          "password reset",
+          "account security",
+          "human review"
+        ],
+        "appropriate": true,
+        "wordCount": 21
+      }
+    },
+    {
+      "threadId": "gs-060",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": true,
+      "notes": "fraud; rule: fraud_or_unauthorized",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.85,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"fraud_or_unauthorized\": mentions hacked.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "Please provide the order number so we can confirm the refund to your card. We’ve noted the issue and will follow up shortly.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1077",
+          "1119"
+        ],
+        "rougeL": 0.125,
+        "coverage": 0,
+        "missing": [
+          "account security",
+          "unauthorised order",
+          "human review"
+        ],
+        "appropriate": true,
+        "wordCount": 23
+      }
+    },
+    {
+      "threadId": "gs-062",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "detail update",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "User requests a standard account detail update that can be handled with a self‑serve response.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "Let us get you back into your account. Please confirm the email on the account and we will send a fresh password reset link.",
+        "degraded": true,
+        "sourcedFrom": [],
+        "rougeL": 0.1333,
+        "coverage": 0,
+        "missing": [
+          "phone number",
+          "account settings",
+          "update"
+        ],
+        "appropriate": true,
+        "wordCount": 24
+      }
+    },
+    {
+      "threadId": "gs-063",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "expired link",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "User can request a new password reset link via automated system; no manual intervention required.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "Let us get you back in. Check the spam folder for the reset email and we will resend it if needed.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1147",
+          "1161",
+          "1175"
+        ],
+        "rougeL": 0.1538,
+        "coverage": 0,
+        "missing": [
+          "password reset",
+          "link expired",
+          "unlock"
+        ],
+        "appropriate": true,
+        "wordCount": 21
+      }
+    },
+    {
+      "threadId": "gs-065",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "profile fix",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "The user can correct the spelling themselves in account settings; no human intervention required.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "We have reviewed your account and cannot help with that request. Please contact Amazon Customer Service for further assistance.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441",
+          "1455",
+          "1469"
+        ],
+        "rougeL": 0.1333,
+        "coverage": 0,
+        "missing": [
+          "name",
+          "account settings",
+          "update"
+        ],
+        "appropriate": true,
+        "wordCount": 19
+      }
+    },
+    {
+      "threadId": "gs-066",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "account linked to Prime",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "User cannot access account linked to Prime; requires manual account assistance.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed this account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1441",
+          "1455",
+          "1469"
+        ],
+        "rougeL": 0.2,
+        "coverage": 0,
+        "missing": [
+          "account access",
+          "prime",
+          "password reset"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    },
+    {
+      "threadId": "gs-068",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "feature question",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "Customer is asking about standard account security feature, which can be answered with a standard automated response.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": {
+        "draft": "Yes, Amazon supports authenticator apps for two‑factor login. To enable it, go to your Account Settings, select \"Login & security,\" and follow the prompts to set up a new authenticator. If you need further help, let us know.",
+        "degraded": false,
+        "sourcedFrom": [],
+        "rougeL": 0.2963,
+        "coverage": 1,
+        "missing": [],
+        "appropriate": true,
+        "wordCount": 38
+      }
+    },
+    {
+      "threadId": "gs-069",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": true,
+      "notes": "angry; rule: angry_sentiment",
+      "predictions": {
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.92,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"angry_sentiment\": mentions unacceptable.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": {
+        "draft": "We have reviewed your account and cannot help with that request.",
+        "degraded": false,
+        "sourcedFrom": [
+          "1469",
+          "1441",
+          "1455"
+        ],
+        "rougeL": 0.2,
+        "coverage": 0.3333,
+        "missing": [
+          "account suspension",
+          "human agent"
+        ],
+        "appropriate": true,
+        "wordCount": 11
+      }
+    }
+  ],
+  "judgeResults": [
+    {
+      "threadId": "gs-151",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 3,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 8,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Generic refusal, no next step, but concise and professional.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-152",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 2,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 8,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Generic refusal, no next step, concise.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-154",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 3,
+        "resolutionLikelihood": 1,
+        "conciseness": 3
+      },
+      "total": 9,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional tone, but lacks a clear next step or guidance.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-155",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 11,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, policy‑based reply, no invented details, concise and professional.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-157",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "All criteria met; concise, professional, no invented facts.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-158",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "All criteria met; concise, professional, actionable.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-160",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 2,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 7,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Generic, no next step, but concise and not invented.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-161",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, concise, no invented details.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-163",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 3,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 8,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional tone, but no actionable next step.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-164",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 0,
+        "toneMatch": 1,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 4,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Reply is generic, not grounded, offers no real solution.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-166",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 2,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 7,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Generic, no next step, acceptable tone but lacks resolution.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-167",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 11,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional, concise, but may not resolve due to lack of order.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-169",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 11,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional, concise, offers next step but generic.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-170",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, concise, no invented facts.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-172",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, professional, and concise request for details to investigate.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-173",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 1,
+        "conciseness": 3
+      },
+      "total": 10,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional tone, no invented facts, but lacks actionable next step for user.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-175",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "All criteria met; concise, helpful, no invented facts.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-051",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 11,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, helpful, no invented details; next step is reasonable but could be more specific.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-053",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 0,
+        "toneMatch": 0,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 3,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Short but unhelpful; no guidance or empathy.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-054",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 1,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 9,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional tone, concise, but steps may not be accurate without evidence.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-056",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, helpful, no invented details.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-057",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 10,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear next step, no invented details, concise and professional.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-059",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 10,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, helpful next step, no invented details.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-060",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 2,
+        "conciseness": 3
+      },
+      "total": 11,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Professional, concise, asks for key info but lacks immediate reassurance.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-062",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 3,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 8,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Generic, but does not address phone number removal.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-063",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 3,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 12,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Clear, helpful, no filler, no invented facts.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-065",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 0,
+        "toneMatch": 1,
+        "resolutionLikelihood": 1,
+        "conciseness": 3
+      },
+      "total": 5,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Unhelpful, no guidance, but concise.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-066",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 1,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 6,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Generic, no next step, minimal filler.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-068",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 0,
+        "toneMatch": 3,
+        "resolutionLikelihood": 3,
+        "conciseness": 3
+      },
+      "total": 9,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "No evidence provided; claim about authenticator apps is unverified.",
+      "problem": null,
+      "degraded": false
+    },
+    {
+      "threadId": "gs-069",
+      "humanScore": null,
+      "scores": {
+        "groundedness": 2,
+        "toneMatch": 1,
+        "resolutionLikelihood": 0,
+        "conciseness": 3
+      },
+      "total": 6,
+      "maxTotal": 12,
+      "valid": true,
+      "notes": "Short, but lacks helpfulness and next steps.",
+      "problem": null,
+      "degraded": false
+    }
+  ]
+}

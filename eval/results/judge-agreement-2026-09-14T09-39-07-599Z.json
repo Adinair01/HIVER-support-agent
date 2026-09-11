@@ -1,0 +1,58 @@
+{
+  "samplePath": "/Users/adityanair/Hiverhq/eval/judge_sample_30.csv",
+  "ready": true,
+  "reason": null,
+  "n": 30,
+  "compared": 30,
+  "dimensions": {
+    "groundedness": {
+      "kappa": -0.0901,
+      "observedAgreement": 0.1667,
+      "expectedAgreement": 0.2356,
+      "n": 30,
+      "meanHuman": 1.7333,
+      "meanJudge": 2.2,
+      "meanBias": 0.4667,
+      "exactAgreement": 0.1667
+    },
+    "toneMatch": {
+      "kappa": 0.0941,
+      "observedAgreement": 0.4333,
+      "expectedAgreement": 0.3744,
+      "n": 30,
+      "meanHuman": 2.4333,
+      "meanJudge": 2.5333,
+      "meanBias": 0.1,
+      "exactAgreement": 0.4333
+    },
+    "resolutionLikelihood": {
+      "kappa": -0.0894,
+      "observedAgreement": 0.1333,
+      "expectedAgreement": 0.2044,
+      "n": 30,
+      "meanHuman": 1.7333,
+      "meanJudge": 1.5333,
+      "meanBias": -0.2,
+      "exactAgreement": 0.1333
+    },
+    "conciseness": {
+      "kappa": 0,
+      "observedAgreement": 0.5667,
+      "expectedAgreement": 0.5667,
+      "n": 30,
+      "meanHuman": 2.5667,
+      "meanJudge": 3,
+      "meanBias": 0.4333,
+      "exactAgreement": 0.5667
+    }
+  },
+  "total": {
+    "kappa": 0.1296,
+    "observedAgreement": 0.5,
+    "expectedAgreement": 0.4256,
+    "n": 30,
+    "bucketRule": "rubric total 0-5 = low, 6-8 = medium, 9-12 = high",
+    "meanHumanTotal": 8.4667,
+    "meanJudgeTotal": 9.2667
+  }
+}

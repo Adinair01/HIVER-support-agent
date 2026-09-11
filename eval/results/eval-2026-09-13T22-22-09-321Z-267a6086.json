@@ -1,0 +1,2048 @@
+{
+  "runId": "eval-2026-09-13T22-22-09-321Z-267a6086",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "goldenSetSize": 45,
+    "judgeSampleSize": 0,
+    "variants": [
+      "keyword",
+      "zero-shot",
+      "few-shot"
+    ],
+    "source": "mongo",
+    "seededThreads": true
+  },
+  "metrics": {
+    "classification": {
+      "keyword": {
+        "accuracy": 0.5778,
+        "perIntent": {
+          "ORDER_STATUS": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "RETURN_REFUND": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "precision": 1,
+            "recall": 0.55,
+            "f1": 0.7097,
+            "support": 20
+          },
+          "PRODUCT_COMPLAINT": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "DELIVERY_ISSUE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "BILLING_DISPUTE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "GENERAL_INQUIRY": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ABUSE_SPAM": {
+            "precision": 1,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 25
+          }
+        },
+        "macro": {
+          "precision": 1,
+          "recall": 0.575,
+          "f1": 0.7298
+        },
+        "confusionMatrix": {
+          "ORDER_STATUS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "RETURN_REFUND": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 11,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 8,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "PRODUCT_COMPLAINT": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "DELIVERY_ISSUE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "BILLING_DISPUTE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "GENERAL_INQUIRY": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ABUSE_SPAM": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 9,
+            "ABUSE_SPAM": 15,
+            "__unparsed": 0
+          }
+        },
+        "unparsedOrFailed": 0
+      },
+      "zero-shot": {
+        "accuracy": 0.9556,
+        "perIntent": {
+          "ORDER_STATUS": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "RETURN_REFUND": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1,
+            "support": 20
+          },
+          "PRODUCT_COMPLAINT": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "DELIVERY_ISSUE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "BILLING_DISPUTE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "GENERAL_INQUIRY": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ABUSE_SPAM": {
+            "precision": 1,
+            "recall": 0.92,
+            "f1": 0.9583,
+            "support": 25
+          }
+        },
+        "macro": {
+          "precision": 1,
+          "recall": 0.96,
+          "f1": 0.9791
+        },
+        "confusionMatrix": {
+          "ORDER_STATUS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "RETURN_REFUND": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 20,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "PRODUCT_COMPLAINT": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "DELIVERY_ISSUE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "BILLING_DISPUTE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "GENERAL_INQUIRY": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ABUSE_SPAM": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 1,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 23,
+            "__unparsed": 0
+          }
+        },
+        "unparsedOrFailed": 0
+      },
+      "few-shot": {
+        "accuracy": 0.8889,
+        "perIntent": {
+          "ORDER_STATUS": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "RETURN_REFUND": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "precision": 1,
+            "recall": 0.9,
+            "f1": 0.9474,
+            "support": 20
+          },
+          "PRODUCT_COMPLAINT": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "DELIVERY_ISSUE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "BILLING_DISPUTE": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "GENERAL_INQUIRY": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "support": 0
+          },
+          "ABUSE_SPAM": {
+            "precision": 1,
+            "recall": 0.88,
+            "f1": 0.9362,
+            "support": 25
+          }
+        },
+        "macro": {
+          "precision": 1,
+          "recall": 0.89,
+          "f1": 0.9418
+        },
+        "confusionMatrix": {
+          "ORDER_STATUS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "RETURN_REFUND": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ACCOUNT_ACCESS": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 18,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 2,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "PRODUCT_COMPLAINT": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "DELIVERY_ISSUE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "BILLING_DISPUTE": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "GENERAL_INQUIRY": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 0,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 0,
+            "GENERAL_INQUIRY": 0,
+            "ABUSE_SPAM": 0,
+            "__unparsed": 0
+          },
+          "ABUSE_SPAM": {
+            "ORDER_STATUS": 0,
+            "RETURN_REFUND": 1,
+            "ACCOUNT_ACCESS": 0,
+            "PRODUCT_COMPLAINT": 0,
+            "DELIVERY_ISSUE": 0,
+            "BILLING_DISPUTE": 1,
+            "GENERAL_INQUIRY": 1,
+            "ABUSE_SPAM": 22,
+            "__unparsed": 0
+          }
+        },
+        "unparsedOrFailed": 0
+      }
+    },
+    "escalation": {
+      "precision": 0.75,
+      "recall": 0.9643,
+      "f1": 0.8437,
+      "accuracy": 0.7778,
+      "tp": 27,
+      "fp": 9,
+      "fn": 1,
+      "tn": 8,
+      "productionVariant": "few-shot",
+      "byTrigger": {
+        "rule": 24,
+        "llm": 21
+      },
+      "decidedByRules": 24
+    },
+    "replyQuality": {
+      "evaluated": 0,
+      "meanRougeL": 0,
+      "meanKeywordCoverage": 0,
+      "lengthAppropriateRate": 0,
+      "meanWordCount": 0,
+      "topMissingKeywords": [],
+      "degradedRate": 0
+    },
+    "judge": {
+      "summary": {
+        "judged": 0,
+        "valid": 0,
+        "invalid": 0,
+        "meanTotal": 0,
+        "maxTotal": 12,
+        "normalizedMean": 0,
+        "meanByDimension": {
+          "groundedness": 0,
+          "toneMatch": 0,
+          "resolutionLikelihood": 0,
+          "conciseness": 0
+        }
+      },
+      "agreement": {
+        "kappa": 0,
+        "observedAgreement": 0,
+        "expectedAgreement": 0,
+        "n": 0,
+        "humanScoredRows": 0,
+        "bucketRule": "rubric total 0-5 = low, 6-8 = medium, 9-12 = high"
+      }
+    }
+  },
+  "rows": [
+    {
+      "threadId": "gs-151",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-152",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-153",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-154",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-155",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-156",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-157",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"angry_sentiment\": mentions useless.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-158",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "RETURN_REFUND",
+          "confidence": 0.7,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "RETURN_REFUND",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "RETURN_REFUND",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "The customer demands an immediate refund with hostility, requiring manual human intervention and financial action.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-159",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.6,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"angry_sentiment\": mentions useless.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-160",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-161",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-162",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-163",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-164",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-165",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-166",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.65,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-167",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "bot; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-168",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "not a support request; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-169",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-170",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-171",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-172",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abusive with no actionable detail",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "BILLING_DISPUTE",
+          "confidence": 0.9,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "BILLING_DISPUTE",
+          "confidence": 0.85,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "The customer is accusing Amazon of theft regarding a financial dispute, which requires human review to address potential fraud or billing errors safely.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-173",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "threat",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-174",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "spam complaint",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"abuse_or_spam\": ABUSE_SPAM is never answered by an automated public reply.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-175",
+      "expectedIntent": "ABUSE_SPAM",
+      "expectedEscalation": true,
+      "notes": "abuse; rule: abuse_or_spam",
+      "predictions": {
+        "keyword": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.6,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ABUSE_SPAM",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.6,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "This is a vague complaint about the app without a specific issue, so a standard self-serve troubleshooting link is appropriate.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-051",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "login failure",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 1,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account access issues require human intervention or specialized security verification that automated replies cannot resolve.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-052",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "delivery of reset",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account access issues involving unreceived password reset emails require manual verification or intervention by a human support agent.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-053",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "lockout",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 1,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 1,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account lockouts require manual verification or security interventions that only a human support agent can handle.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-054",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "detail change",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "This is a routine, self-serve account management question that can be resolved with standard instructions.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-055",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "OTP failure",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.9,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account access issues involving failing verification codes require manual intervention or identity verification that only a human agent can handle.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-056",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "platform specific",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "Basic app sign-in issues can be resolved with standard self-service troubleshooting steps like clearing cache and reinstalling.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-057",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "unlock request",
+      "predictions": {
+        "keyword": {
+          "intent": "RETURN_REFUND",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account unlocking requires manual verification and security actions that only a human agent can perform.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-058",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "2FA",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.55,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account access issues involving two-factor authentication require human intervention or specialized security verification tools.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-059",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": true,
+      "notes": "possible takeover",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 1,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account compromise and unauthorized password changes require human verification and security intervention to restore access safely.",
+        "triggeredBy": "llm",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-060",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": true,
+      "notes": "fraud; rule: fraud_or_unauthorized",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"fraud_or_unauthorized\": mentions hacked.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-061",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "login loop",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "This is a routine technical issue that can be resolved via self-service troubleshooting like clearing browser cache or resetting passwords.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-062",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "detail update",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "This is a routine self-serve question that can be resolved with standard instructions for updating account settings.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-063",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "expired link",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account lockout issues require human assistance or specialized verification processes to securely restore access when automated reset links fail.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-064",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "policy question",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "This is a standard self-serve question about account management that can be answered with policy information.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-065",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "profile fix",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "Customers can easily update their name themselves in their account settings without human intervention.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-066",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "account linked to Prime",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Account access issues regarding a Prime membership require identity verification or manual account recovery actions that only a human agent can handle.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-067",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "dead link",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.75,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.99,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "Password reset link issues are routine self-serve problems solvable by requesting a new link or using standard troubleshooting.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-068",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "feature question",
+      "predictions": {
+        "keyword": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.9,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "auto",
+        "reason": "This is a routine informational question about login security features that can be answered with standard support documentation.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": false
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-069",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": true,
+      "notes": "angry; rule: angry_sentiment",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Escalated by rule \"angry_sentiment\": mentions unacceptable.",
+        "triggeredBy": "rule",
+        "expected": true,
+        "predicted": true
+      },
+      "reply": null
+    },
+    {
+      "threadId": "gs-070",
+      "expectedIntent": "ACCOUNT_ACCESS",
+      "expectedEscalation": false,
+      "notes": "verification steps",
+      "predictions": {
+        "keyword": {
+          "intent": "GENERAL_INQUIRY",
+          "confidence": 0.35,
+          "degraded": false,
+          "error": null
+        },
+        "zero-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        },
+        "few-shot": {
+          "intent": "ACCOUNT_ACCESS",
+          "confidence": 0.95,
+          "degraded": false,
+          "error": null
+        }
+      },
+      "escalation": {
+        "decision": "escalate",
+        "reason": "Verifying identity for account access requires human intervention or secure manual verification processes.",
+        "triggeredBy": "llm",
+        "expected": false,
+        "predicted": true
+      },
+      "reply": null
+    }
+  ],
+  "judgeResults": []
+}
