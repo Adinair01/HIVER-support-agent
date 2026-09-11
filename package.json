@@ -1,0 +1,45 @@
+{
+  "name": "hiver-support-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Twitter customer-support AI agent for Amazon — Hiver SDE Intern take-home",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "fixture": "node scripts/makeFixture.js",
+    "build:golden": "node scripts/buildGoldenSet.js",
+    "eval": "node scripts/runEval.js",
+    "report": "node scripts/exportReport.js",
+    "build-golden-set": "node scripts/buildGoldenSet.js",
+    "export-judge-sample": "node scripts/exportJudgeSample.js",
+    "eval:agreement": "node scripts/judgeAgreement.js",
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "keywords": [
+    "customer-support",
+    "llm",
+    "rag",
+    "evaluation",
+    "hiver"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "csv-parse": "^7.0.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "groq-sdk": "^1.6.0",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.10.0",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "zod": "^4.6.4"
+  }
+}

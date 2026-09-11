@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Env & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Raw dataset (large CSV — see README for download).
+# `data/raw/*` (not `data/raw/`) so the negation below can re-include .gitkeep:
+# git never descends into an excluded directory, so ignoring the directory itself
+# would silently drop the placeholder too.
+data/raw/*
+!data/raw/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# NOTE (MAIN.md §8 amendment, session 1):
+HANDOFF.md
+# It must never be pushed (see HANDOFF.md, Session 1).
