@@ -1,4 +1,4 @@
-# hiver-support-agent
+# HIVER-support-agent
 
 An AI customer-support agent for **Amazon Help on Twitter**, built for the Hiver
 SDE Intern take-home. One request runs a full pipeline - classify intent →
