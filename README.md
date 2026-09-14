@@ -1,14 +1,14 @@
 # hiver-support-agent
 
 An AI customer-support agent for **Amazon Help on Twitter**, built for the Hiver
-SDE Intern take-home. One request runs a full pipeline — classify intent →
+SDE Intern take-home. One request runs a full pipeline - classify intent →
 retrieve similar resolved threads → draft a grounded reply → decide
-auto-handle vs escalate — and every step is measured by an evaluation harness
+auto-handle vs escalate - and every step is measured by an evaluation harness
 with an LLM-as-judge rubric.
 
-Stack: **Node.js · Express · MongoDB · Anthropic Claude**, strict MVC. The
+Stack: **Node.js · Express · MongoDB · Groq**, strict MVC. The
 operating manual that governs the codebase is [`MAIN.md`](./MAIN.md); read it
-first, then [`HANDOFF.md`](./HANDOFF.md) for session history.
+first.
 
 ---
 
@@ -68,13 +68,13 @@ with a list of offending variables rather than falling back to a default.
 
 | Variable | Required | Default | Purpose |
 |---|---|---|---|
-| `ANTHROPIC_API_KEY` | yes | — | Claude access for classifier/responder/escalation/judge |
+| `GROQ_API_KEY` | yes | — | Groq access for classifier/responder/escalation/judge |
 | `MONGODB_URI` | yes | — | Thread store, golden set, eval results |
 | `PORT` | no | `3000` | HTTP port |
 | `NODE_ENV` | no | `development` | `production` hides internal error messages |
 | `LOG_LEVEL` | no | `info` | pino level |
-| `ANTHROPIC_MODEL` | no | `claude-sonnet-4-5` | Model for every LLM step |
-| `ANTHROPIC_MAX_TOKENS` | no | `1024` | Output cap per call |
+| `GROQ_MODEL` | no | `openai/gpt-oss-20b` | Model for every LLM step |
+| `LLM_MAX_TOKENS` | no | `2048` | Output cap per call |
 | `RATE_LIMIT_WINDOW_MS` / `RATE_LIMIT_MAX` | no | `60000` / `60` | Global limiter on `/api` |
 | `SEED_MAX_THREADS` | no | `5000` | Thread cap per seed run |
 | `EVAL_JUDGE_SAMPLE_SIZE` | no | `30` | Rows scored by the LLM judge |
@@ -87,7 +87,7 @@ with a list of offending variables rather than falling back to a default.
 POST /api/agent/process
   ├─ classify   keyword | zero-shot | few-shot (3 examples per intent from the golden set)
   ├─ retrieve   MongoDB $text search over resolved threads → top 3, with similarity scores
-  ├─ respond    Claude, grounded in "how Amazon resolved these 3 cases" → { draft, confidence, sourcedFrom }
+  ├─ respond    Groq, grounded in "how Amazon resolved these 3 cases" → { draft, confidence, sourcedFrom }
   └─ escalate   deterministic rules first, LLM review only for the grey zone
                 → { decision, reason, triggeredBy: 'rule' | 'llm' }
         ↓
@@ -165,14 +165,14 @@ the system (keyword classifier, escalation rules, automated reply metrics).
 
 ## 5. Degraded modes (deliberate, never silent)
 
-If `ANTHROPIC_API_KEY` is missing or still set to the `.env.example` placeholder:
+If `GROQ_API_KEY` is missing or still set to the `.env.example` placeholder:
 
 - `classify` with an LLM variant returns the **keyword** result plus
   `degraded: true` and a `degradedReason`;
 - the responder returns a documented template reply, flagged `degraded: true`
   (so the report can separate template output from model output);
 - escalation skips the LLM review and records the `llm_review_skipped` flag;
-- the judge reports `valid: false` with `ANTHROPIC_API_KEY not configured`.
+- the judge reports `valid: false` with `GROQ_API_KEY not configured`.
 
 Nothing is ever presented as model output when it is not, and an LLM escalation
 failure **fails safe** (escalates) rather than auto-replying.
